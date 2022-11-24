@@ -1,79 +1,85 @@
 <template>
-  <v-container class="fill-height">
-    <v-responsive class="d-flex align-center text-center fill-height">
-      <v-img
-        contain
-        height="300"
-        src="src/assets/logo.svg"
-      />
+  <v-app-bar
+    collapse-on-scroll
+    :collapse="!collapseOnScroll"
+    :collapse-on-scroll="collapseOnScroll"
+    collapse
+    fluid
+    color="deep-purple accent-4"
+    dark
+    scroll-target="#scrolling-techniques-6"
+  >
+    <v-app-bar-nav-icon
+      v-model="collapseOnScroll"
+    
+    ></v-app-bar-nav-icon>
 
-      <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
+    <v-checkbox
+      v-model="collapseOnScroll"
+      color="white"
+    ></v-checkbox>
+    <v-toolbar-title>Collapsing Bar</v-toolbar-title>
 
-      <h1 class="text-h2 font-weight-bold">Vuetify</h1>
+    <v-spacer></v-spacer>
 
-      <div class="py-14" />
+  </v-app-bar>
+  <v-app 
+    theme="light">
 
-      <v-row class="d-flex align-center justify-center">
-        <v-col cols="auto">
-          <v-btn
-            href="https://next.vuetifyjs.com/components/all/"
-            min-width="164"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-          >
-            <v-icon
-              icon="mdi-view-dashboard"
-              size="large"
-              start
-            />
 
-            Components
-          </v-btn>
+    <v-container
+      tag="first_panel"
+      class="h-100"
+      fluid
+      style="background-color: pink;">
+
+
+      
+      <v-row
+        class="text-right"
+        no-gutters
+        align="center"
+        style="height: 100%;">
+        <v-col>
+          <h1 style="font-size: 150px; font-weight: lighter;">Welcome</h1>
+          <h1 style="font-size: 50px;font-weight: 400;">Ruben van Gemeren</h1>
         </v-col>
 
-        <v-col cols="auto">
-          <v-btn
-            color="primary"
-            href="https://next.vuetifyjs.com/introduction/why-vuetify/#feature-guides"
-            min-width="228"
-            rel="noopener noreferrer"
-            size="x-large"
-            target="_blank"
-            variant="flat"
-          >
-            <v-icon
-              icon="mdi-speedometer"
-              size="large"
-              start
-            />
 
-            Get Started
-          </v-btn>
-        </v-col>
 
-        <v-col cols="auto">
-          <v-btn
-            href="https://community.vuetifyjs.com/"
-            min-width="164"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-          >
-            <v-icon
-              icon="mdi-account-group"
-              size="large"
-              start
-            />
-
-            Community
-          </v-btn>
-        </v-col>
       </v-row>
-    </v-responsive>
-  </v-container>
+
+    </v-container>
+
+  </v-app>
+
+  <v-app>
+    <v-container
+      fluid
+      class="h-100"
+      style="background-color: darkorange;"
+      >
+      <h1 class="display">Second part of the page</h1>
+    </v-container>
+  </v-app>
+
+  <v-app>
+    <v-container
+      fluid
+      class="h-100"
+      style="background-color:lightskyblue;"
+      >
+      <h1 class="display">Third part of the page</h1>
+    </v-container>
+  </v-app>
 </template>
 
-<script setup lang="ts">
-  //
+<!-- change to <script lang="ts"> -->
+<script >
+
+export default {
+    data: () => ({
+      collapseOnScroll: true,
+    }),
+  }
 </script>
