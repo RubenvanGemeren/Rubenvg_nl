@@ -1,85 +1,53 @@
 <template>
-  <v-app-bar
-    collapse-on-scroll
-    :collapse="!collapseOnScroll"
-    :collapse-on-scroll="collapseOnScroll"
-    collapse
-    fluid
-    color="deep-purple accent-4"
-    dark
-    scroll-target="#scrolling-techniques-6"
-  >
-    <v-app-bar-nav-icon
-      v-model="collapseOnScroll"
-    
-    ></v-app-bar-nav-icon>
+  <v-app id="app">
+    <v-navigation-drawer v-model="drawer">
+      <!--  -->
+    </v-navigation-drawer>
 
-    <v-checkbox
-      v-model="collapseOnScroll"
-      color="white"
-    ></v-checkbox>
-    <v-toolbar-title>Collapsing Bar</v-toolbar-title>
-
-    <v-spacer></v-spacer>
-
-  </v-app-bar>
-  <v-app 
-    theme="light">
-
-
-    <v-container
-      tag="first_panel"
-      class="h-100"
-      fluid
-      style="background-color: pink;">
-
-
+    <v-app-bar>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       
-      <v-row
-        class="text-right"
-        no-gutters
-        align="center"
-        style="height: 100%;">
-        <v-col>
-          <h1 style="font-size: 150px; font-weight: lighter;">Welcome</h1>
-          <h1 style="font-size: 50px;font-weight: 400;">Ruben van Gemeren</h1>
-        </v-col>
+      <v-spacer></v-spacer>
 
+      <h1>Ruben van Gemeren</h1>
+      
+      <v-spacer></v-spacer>
+      
+      <v-icon size="large" class="mr-4">mdi-github</v-icon>
+      <v-icon size="large" class="mx-4">mdi-linkedin</v-icon>
+      <v-icon size="large" class="mx-4">mdi-steam</v-icon>
 
+    </v-app-bar>
 
-      </v-row>
-
-    </v-container>
-
-  </v-app>
-
-  <v-app>
-    <v-container
+    <v-main>
+      <v-container
       fluid
-      class="h-100"
+      class=""
       style="background-color: darkorange;"
+      >
+      <h1 class="display">First part of the page</h1>
+      <p>Dit is een introductie, beschrijf wie ik ben en wat ik kan/doe</p>
+    </v-container>
+      <v-container
+      fluid
+      class=""
+      style="background-color: darkgreen;"
       >
       <h1 class="display">Second part of the page</h1>
     </v-container>
-  </v-app>
-
-  <v-app>
-    <v-container
+      <v-container
       fluid
-      class="h-100"
-      style="background-color:lightskyblue;"
+      class=""
+      style="background-color: darkblue;"
       >
       <h1 class="display">Third part of the page</h1>
     </v-container>
+    </v-main>
   </v-app>
 </template>
 
-<!-- change to <script lang="ts"> -->
-<script >
-
-export default {
-    data: () => ({
-      collapseOnScroll: true,
-    }),
+<script>
+  export default {
+    data: () => ({ drawer: null }),
   }
 </script>
