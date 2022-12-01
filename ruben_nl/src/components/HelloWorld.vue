@@ -1,10 +1,15 @@
+
+
 <template>
+
   <v-app id="app">
     <v-navigation-drawer v-model="drawer">
       <!--  -->
     </v-navigation-drawer>
 
-    <v-app-bar>
+    <v-app-bar
+      id="page_header"
+      >
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       
       <v-spacer></v-spacer>
@@ -13,9 +18,9 @@
       
       <v-spacer></v-spacer>
       
-      <v-icon size="large" class="mr-4">mdi-github</v-icon>
-      <v-icon size="large" class="mx-4">mdi-linkedin</v-icon>
-      <v-icon size="large" class="mx-4">mdi-steam</v-icon>
+      <a href="https://github.com/RubenvanGemeren" target="_blank"><v-icon size="large" class="mr-4" color="black">mdi-github</v-icon></a>
+      <a href="https://www.linkedin.com/in/ruben-van-gemeren-1524a6151/?locale=en_US" target="_blank"><v-icon size="large" class="mx-4" color="black">mdi-linkedin</v-icon></a>
+      <a href="https://steamcommunity.com/id/rubini9/" target="_blank"><v-icon size="large" class="mx-4" color="black">mdi-steam</v-icon></a>
 
     </v-app-bar>
 
@@ -47,6 +52,8 @@
 </template>
 
 <script>
+  import '@/assets/mycss/mycss.scss';
+
   export default {
     data: () => ({ drawer: null }),
   }
