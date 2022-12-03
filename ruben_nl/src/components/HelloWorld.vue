@@ -5,7 +5,11 @@
   <v-app 
     id="app"
   >
-    <v-navigation-drawer v-model="drawer" id="nav_drawer">
+    <v-navigation-drawer 
+      v-model="drawer"
+      id="nav_drawer"
+      absolute
+      temporary>
       <!--  -->
     </v-navigation-drawer>
 
@@ -29,11 +33,14 @@
     <v-main id="main_block">
       <v-container
       fluid
-      class=""
+      
       id="container_1"
       >
-      <h1 class="display">First part of the page</h1>
-      <p>Dit is een introductie, beschrijf wie ik ben en wat ik kan/doe </p>
+      <p id="hi_text">Hi, i'm</p>
+      <h1 id="name_text" class="display">Ruben</h1>
+      <h1 id="name_text_small" class="display">van</h1>
+      <h1 id="name_text" class="display">Gemeren</h1>
+      <p>Software Developer // color green enthusiast</p>
     </v-container>
       <v-container
       fluid
