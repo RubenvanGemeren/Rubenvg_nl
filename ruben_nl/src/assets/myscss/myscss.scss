@@ -3,7 +3,6 @@
     background: rgb(83, 197, 250);
 }
 
-
 #app {
     //background-image: url(../blob-scene-haikei.svg);
     background-image: url(../blurry-gradient-haikei.svg);
@@ -24,9 +23,11 @@
     color: white;
 }
   
+// Text elements
+
 #name_text {
     animation: fadeIn 8s;
-     background-image: linear-gradient(to right top, #d5c200, #cbc700, #c0cc00, #b4d000, #a7d500);
+    background-image: linear-gradient(to right top, #d5c200, #cbc700, #c0cc00, #b4d000, #a7d500);
     background-clip: text;
     color: transparent;
     font-size: 120px;
@@ -42,13 +43,36 @@
     font-size: 80px;
 }
 
-#hi_text {
+#intro_text {
     font-size: 75px;
 }
 
 #title_text {
     animation: fadeIn 15s;
 }
+
+#cool_text {
+    color: pink;
+}
+
+// Thank you
+
+#thank_you_dialog {
+    max-width: 50%;  
+}
+
+#thank_you_card {
+    color: rgb(100, 63, 121);
+    background-color: #022100;
+    background-image: url(../blob-scatter-haikei.svg);
+    background-size: cover;
+}
+
+#thank_you_text {
+    font-weight: bold;
+}
+
+// Containers
 
 #container_1 {
     padding: 5%;
