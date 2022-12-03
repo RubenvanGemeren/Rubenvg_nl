@@ -15,14 +15,11 @@
 
     <v-app-bar
       id="page_header"
-      rounded>
+      elevation="0">
       <v-app-bar-nav-icon id="header_element" @click="drawer = !drawer"></v-app-bar-nav-icon>
       
       <v-spacer></v-spacer>
 
-      <h1 id="header_element">Ruben van Gemeren</h1>
-      
-      <v-spacer></v-spacer>
       
       <a href="https://github.com/RubenvanGemeren" target="_blank"><v-icon id="header_element" size="large" class="mr-4">mdi-github</v-icon></a>
       <a href="https://www.linkedin.com/in/ruben-van-gemeren-1524a6151/?locale=en_US" target="_blank"><v-icon id="header_element" size="large" class="mx-4">mdi-linkedin</v-icon></a>
@@ -32,15 +29,15 @@
 
     <v-main id="main_block">
       <v-container
+      class="rounded-xl"
       fluid
-      
       id="container_1"
       >
       <p id="hi_text">Hi, i'm</p>
       <h1 id="name_text" class="display">Ruben</h1>
       <h1 id="name_text_small" class="display">van</h1>
       <h1 id="name_text" class="display">Gemeren</h1>
-      <p>Software Developer // color green enthusiast</p>
+      <h1 id="title_text">Dutch Software Developer // color green enthusiast</h1>
     </v-container>
       <v-container
       fluid
