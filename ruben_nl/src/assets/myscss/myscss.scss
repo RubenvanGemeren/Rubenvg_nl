@@ -1,3 +1,8 @@
+::selection {
+    color: rgb(255, 0, 234);
+    background: rgb(83, 197, 250);
+  }
+
 
 #app {
     //background-image: url(../blob-scene-haikei.svg);
@@ -20,7 +25,7 @@
 }
   
 #name_text {
-    background-image: linear-gradient(to right top, #89ffb2, #9fffa3, #b5ff94, #cbff86, #e2ff7a);
+     background-image: linear-gradient(to right top, #d5c200, #cbc700, #c0cc00, #b4d000, #a7d500);
     background-clip: text;
     color: transparent;
     font-size: 120px;
@@ -29,7 +34,7 @@
 }
 
 #name_text_small {
-    background-image: linear-gradient(to right top, #89ffb2, #9fffa3, #b5ff94, #cbff86, #e2ff7a);
+     background-image: linear-gradient(to right top, #d5c200, #cbc700, #c0cc00, #b4d000, #a7d500);
     background-clip: text;
     color: transparent;
     font-size: 80px;
