@@ -1,0 +1,113 @@
+::selection {
+    color: rgb(255, 0, 234);
+    background: rgb(83, 197, 250);
+}
+
+#app {
+    //background-image: url(../blob-scene-haikei.svg);
+    background-image: url(../blurry-gradient-haikei.svg);
+    background-size: cover;
+}
+
+#nav_drawer {
+    background: url(../blob-scatter-haikei.svg);
+    background-size:cover ;
+}
+
+#page_header {
+    background-color: transparent
+    // background-image: linear-gradient(to right top, #28620b, #3a720d, #4d820e, #60930f, #75a30f);
+}
+
+#header_element {
+    color: white;
+}
+  
+// Text elements
+
+#name_text {
+    animation: fadeIn 8s;
+    background-image: linear-gradient(to right top, #d5c200, #cbc700, #c0cc00, #b4d000, #a7d500);
+    background-clip: text;
+    color: transparent;
+    font-size: 120px;
+    font-weight: bolder;
+    line-height: 0.8;
+}
+
+#name_text_small {
+    animation: fadeIn 8s;
+    background-image: linear-gradient(to right top, #d5c200, #cbc700, #c0cc00, #b4d000, #a7d500);
+    background-clip: text;
+    color: transparent;
+    font-size: 80px;
+}
+
+#intro_text {
+    font-size: 75px;
+}
+
+#title_text {
+    animation: fadeIn 15s;
+}
+
+#cool_text {
+    color: pink;
+}
+
+// Thank you
+
+#thank_you_dialog {
+    max-width: 50%;  
+}
+
+#thank_you_card {
+    color: rgb(100, 63, 121);
+    background-color: #022100;
+    background-image: url(../blob-scatter-haikei.svg);
+    background-size: cover;
+}
+
+#thank_you_text {
+    font-weight: bold;
+}
+
+// Containers
+
+#container_1 {
+    padding: 5%;
+    max-width: 75%;
+    text-align: start;
+    margin-block-end: 5%;
+    color: white;
+    background: transparent;
+    //border: 6px solid #fff260;
+    //background-image: url(../stacked-waves-haikei.svg);
+    //background-size: cover;
+}
+
+#container_2 {
+    max-width: 75%;
+    text-align: start;
+    margin-block-end: 5%;
+    color: white;
+    background-image: url(../blob-haikei.svg);
+    background-size: cover;
+}
+
+#container_3 {
+    max-width: 75%;
+    text-align: start;
+    margin-block-end: 5%;
+    color: white;
+    background-image: url(../blob-scene-haikei-simple.svg);
+    background-size: cover;
+}
+
+
+// Keyframes
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

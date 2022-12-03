@@ -1,79 +1,98 @@
+
+
 <template>
-  <v-container class="fill-height">
-    <v-responsive class="d-flex align-center text-center fill-height">
-      <v-img
-        contain
-        height="300"
-        src="src/assets/logo.svg"
-      />
 
-      <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
+  <v-app 
+    id="app"
+  >
+    <v-navigation-drawer 
+      v-model="drawer"
+      id="nav_drawer"
+      absolute
+      temporary
+      elevation="24">
+      <!--  -->
+    </v-navigation-drawer>
 
-      <h1 class="text-h2 font-weight-bold">Vuetify</h1>
+    <v-app-bar
+      id="page_header"
+      elevation="0">
+      <v-app-bar-nav-icon id="header_element" @click="drawer = !drawer"></v-app-bar-nav-icon>
+      
+      <v-spacer></v-spacer>
+      
+      <a href="https://github.com/RubenvanGemeren" target="_blank"><v-icon id="header_element" size="large" class="mr-4">mdi-github</v-icon></a>
+      <a href="https://www.linkedin.com/in/ruben-van-gemeren-1524a6151/?locale=en_US" target="_blank"><v-icon id="header_element" size="large" class="mx-4">mdi-linkedin</v-icon></a>
+      <a href="https://steamcommunity.com/id/rubini9/" target="_blank"><v-icon id="header_element" size="large" class="mx-4">mdi-steam</v-icon></a>
+      <v-btn
+            rounded="lg"
+            variant="tonal"
+        >
+          Thank you
+          <v-dialog
+          v-model="dialog"
+          activator="parent"
+          id="thank_you_dialog"
+        >
+          <v-card
+            id="thank_you_card">
+            <v-card-text
+              >
+              <p id="thank_you_text">Before you begin I want to thank you for visiting this website, I worked hard on it and I think it's <strong id="cool_text">pretty cool</strong>. It will be a ongoing project so you might wanna check in once in a while to see new ideas being worked on!</p>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn color="success" block @click="dialog = false">Close</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+      </v-btn>
 
-      <div class="py-14" />
+    </v-app-bar>
 
-      <v-row class="d-flex align-center justify-center">
-        <v-col cols="auto">
-          <v-btn
-            href="https://next.vuetifyjs.com/components/all/"
-            min-width="164"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-          >
-            <v-icon
-              icon="mdi-view-dashboard"
-              size="large"
-              start
-            />
-
-            Components
-          </v-btn>
-        </v-col>
-
-        <v-col cols="auto">
-          <v-btn
-            color="primary"
-            href="https://next.vuetifyjs.com/introduction/why-vuetify/#feature-guides"
-            min-width="228"
-            rel="noopener noreferrer"
-            size="x-large"
-            target="_blank"
-            variant="flat"
-          >
-            <v-icon
-              icon="mdi-speedometer"
-              size="large"
-              start
-            />
-
-            Get Started
-          </v-btn>
-        </v-col>
-
-        <v-col cols="auto">
-          <v-btn
-            href="https://community.vuetifyjs.com/"
-            min-width="164"
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="text"
-          >
-            <v-icon
-              icon="mdi-account-group"
-              size="large"
-              start
-            />
-
-            Community
-          </v-btn>
-        </v-col>
-      </v-row>
-    </v-responsive>
-  </v-container>
+    <v-main id="main_block">
+      <v-container
+        class="rounded-xl"
+        fluid
+        id="container_1"
+        >
+        <p id="intro_text">Hi, i'm</p>
+        <h1 id="name_text" class="display">Ruben</h1>
+        <h1 id="name_text_small" class="display">van</h1>
+        <h1 id="name_text" class="display">Gemeren</h1>
+        <h1 id="title_text">Dutch Software Developer // color green enthusiast</h1>
+    </v-container>
+      
+    <v-container
+      class="rounded-xl"
+      fluid
+      id="container_2"
+      >
+      <p id="intro_text" class="display">Who am I?</p>
+      <p>My name is <strong>Ruben</strong>, I'm <i>21 years</i> old and live in one of the biggest cities in the Netherlands; Rotterdam.</p>
+      <p></p>
+      <p></p>
+    </v-container>
+      <v-container
+      fluid
+      class=""
+      id="container_3"
+      >
+      <h1 class="display">Third part of the page</h1>
+    </v-container>
+    </v-main>
+  </v-app>
 </template>
 
-<script setup lang="ts">
-  //
+<script>
+  import '@/assets/myscss/myscss.scss';
+
+  export default {
+    data: () => ({ 
+      drawer: null ,
+      // The alert can be used for a later event.
+      alert: true,
+      dialog: false,
+    }),
+    
+  }
 </script>
