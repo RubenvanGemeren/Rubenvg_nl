@@ -55,6 +55,11 @@
     color: pink;
 }
 
+#body_text {
+    font-size: 25px;
+    max-width: 50%;
+}
+
 // Thank you
 
 #thank_you_dialog {
@@ -86,6 +91,10 @@
     //background-size: cover;
 }
 
+#intro_container {
+    display: flex;
+}
+
 #container_2 {
     max-width: 75%;
     text-align: start;
@@ -102,6 +111,15 @@
     color: white;
     background-image: url(../blob-scene-haikei-simple.svg);
     background-size: cover;
+}
+
+// images
+
+#head_img {
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
 }
 
 

@@ -67,10 +67,32 @@
       fluid
       id="container_2"
       >
-      <p id="intro_text" class="display">Who am I?</p>
-      <p>My name is <strong>Ruben</strong>, I'm <i>21 years</i> old and live in one of the biggest cities in the Netherlands; Rotterdam.</p>
-      <p></p>
-      <p></p>
+      <div id="intro_container">
+
+        <div>
+          <p id="intro_text" class="display">Who am I?</p>
+          <p id="body_text">My name is <strong>Ruben</strong>, i'm <i>21 years</i> old and i'm from the Netherlands. As of autumn of 2022 i'm offically a <strong>bachelor of science</strong> after completing my computer science study at the Hogeschool Rotterdam, which means im finally a free man (kinda).</p>
+          
+          <br>
+          
+          <p id="body_text">Although I can say goodby to my old classmates, I hope this is just <strong>one</strong> of the many steps i'll take in my educational carreer. My plan is to follow a master and dive deeper in the world of software development and the architecture of systems and applications.</p>
+          
+          <br>
+          
+          <p id="body_text">Besides working on software related projects on both a educational and a professional level, I also like to make time to hang out with friends (both on- and offline), collect music and exercise.</p>
+        </div>
+
+        <div>
+          <v-divider vertical></v-divider>
+        </div>
+
+
+        <div>
+          <img id="head_img" src="../assets/3S4A3547_small.jpg" alt="Profile picture" />
+        </div>
+      </div>
+      
+        <v-divider color="yellow" vertical style="display: inline;"></v-divider>
     </v-container>
       <v-container
       fluid
