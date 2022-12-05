@@ -5,7 +5,7 @@
 
 #app {
     //background-image: url(../blob-scene-haikei.svg);
-    background-image: url(../blurry-gradient-haikei.svg);
+    background-image: url(../blurry-gradient-haikei.svg) ;
     background-size: cover;
 }
 
@@ -57,7 +57,7 @@
 
 #body_text {
     font-size: 25px;
-    max-width: 50%;
+    max-width: 75%;
 }
 
 // Thank you
@@ -93,6 +93,8 @@
 
 #intro_container {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #container_2 {
@@ -115,12 +117,51 @@
 
 // images
 
-#head_img {
-    height: auto; 
-    width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
+#full_body_img {
+    height: inherit;
+    max-width: 550px; 
+    max-height: 550px;
+    border: #cbc700 solid 2px;
 }
+
+
+.scene {
+  width: 200px;
+  height: 250px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__face {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: red;
+}
+
+.card__face--back {
+  background: blue;
+  transform: rotateY(180deg);
+}
+
+/* this style is applied when the card is clicked */
+.flipme {
+  transform: rotateY(180deg);
+}
+
+
+
 
 
 // Keyframes

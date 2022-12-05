@@ -67,11 +67,11 @@
       fluid
       id="container_2"
       >
+      <p id="intro_text" class="display">Who am I?</p>
       <div id="intro_container">
 
         <div>
-          <p id="intro_text" class="display">Who am I?</p>
-          <p id="body_text">My name is <strong>Ruben</strong>, i'm <i>21 years</i> old and i'm from the Netherlands. As of autumn of 2022 i'm offically a <strong>bachelor of science</strong> after completing my computer science study at the Hogeschool Rotterdam, which means im finally a free man (kinda).</p>
+          <p id="body_text">My name is <strong>Ruben</strong>, i'm <i>21 years</i> old and i'm from the Netherlands. As of autumn of 2022 i'm offically a <strong>bachelor of science</strong> after completing my computer science study at the Hogeschool Rotterdam, which means i'm finally a free man (kinda).</p>
           
           <br>
           
@@ -83,16 +83,21 @@
         </div>
 
         <div>
-          <v-divider vertical></v-divider>
-        </div>
-
-
-        <div>
-          <img id="head_img" src="../assets/3S4A3547_small.jpg" alt="Profile picture" />
+          <div class="scene scene--card">
+            <div
+              class="card"
+              @click="cardOne == 'start' ? (cardOne = 'flipped' ) : (cardOne = 'start' )"
+              v-bind:class="{ flipme: cardOne == 'flipped' }"
+            >
+              <div class="card__face card__face--front">
+                <img id="full_body_img" src="../assets/3S4A3573-min.jpg" alt="Profile picture" />
+              </div>
+              <div class="card__face card__face--back"></div>
+            </div>
+          </div>
         </div>
       </div>
-      
-        <v-divider color="yellow" vertical style="display: inline;"></v-divider>
+
     </v-container>
       <v-container
       fluid
@@ -114,6 +119,7 @@
       // The alert can be used for a later event.
       alert: true,
       dialog: false,
+      cardOne: "start"
     }),
     
   }
