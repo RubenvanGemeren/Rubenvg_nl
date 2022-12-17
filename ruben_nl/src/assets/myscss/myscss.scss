@@ -60,6 +60,15 @@
     max-width: 75%;
 }
 
+.card_back_text {
+    margin: 3%;
+}
+
+.card_back_text--tip {
+    align-self: flex-end;
+    font-size: small;
+}
+
 // Thank you
 
 #thank_you_dialog {
@@ -119,21 +128,23 @@
 
 #full_body_img {
     height: inherit;
-    max-width: 550px; 
-    max-height: 550px;
-    border: #cbc700 solid 2px;
+    width: inherit;
+    border: #cbc700 solid 4px;
+    border-radius: 20px;
 }
+
+// Cards
 
 
 .scene {
-  width: 200px;
-  height: 250px;
+  width: 20 * 16px;
+  height: 20 * 24px;
 }
 
 .card {
   width: 100%;
   height: 100%;
-  transition: transform 1s;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
@@ -141,18 +152,20 @@
 
 .card__face {
   position: absolute;
-  width: 200px;
-  height: 250px;
+  width: inherit;
+  height: inherit;
   backface-visibility: hidden;
 }
 
 .card__face--front {
-  background: red;
 }
 
 .card__face--back {
-  background: blue;
-  transform: rotateY(180deg);
+    display: flex;
+    border: #cbc700 solid 4px;
+    border-radius: 20px;
+    background: #7f5b41;
+    transform: rotateY(180deg);
 }
 
 /* this style is applied when the card is clicked */
