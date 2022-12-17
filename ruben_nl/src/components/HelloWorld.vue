@@ -83,16 +83,25 @@
         </div>
 
         <div>
-          <div class="scene scene--card">
+
+          <div class="scene">
             <div
               class="card"
               @click="cardOne == 'start' ? (cardOne = 'flipped' ) : (cardOne = 'start' )"
               v-bind:class="{ flipme: cardOne == 'flipped' }"
             >
-              <div class="card__face card__face--front">
-                <img id="full_body_img" src="../assets/3S4A3573-min.jpg" alt="Profile picture" />
-              </div>
-              <div class="card__face card__face--back"></div>
+            <!-- Design custome tooltip! -->
+            <v-tooltip text="Click me!" location="bottom">
+              <template v-slot:activator="{ props }">
+                <div class="card__face card__face--front" v-bind:="props">
+                    <img id="full_body_img" src="../assets/3S4A3573-min.jpg" alt="Profile picture" />
+                  </div>
+                  <div class="card__face card__face--back" v-bind:="props">
+                    <h1 class="card_back_text card_back_text--tip">What is this?</h1>
+                    <p class="card_back_text card_back_text--tip">Every image can be rotated to reveal more information or extra bits that don't fit on the page itself. Try it out, maybe you'ill find some secerts</p>
+                  </div>
+                </template>
+              </v-tooltip>
             </div>
           </div>
         </div>
