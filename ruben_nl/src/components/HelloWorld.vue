@@ -97,8 +97,9 @@
                     <img id="full_body_img" src="../assets/3S4A3573-min.jpg" alt="Profile picture" />
                   </div>
                   <div class="card__face card__face--back" v-bind:="props">
+                    <h2 class="card_back_text"><strong>February 2022</strong></h2>
                     <h1 class="card_back_text card_back_text--tip">What is this?</h1>
-                    <p class="card_back_text card_back_text--tip">Every image can be rotated to reveal more information or extra bits that don't fit on the page itself. Try it out, maybe you'ill find some secerts</p>
+                    <p class="card_back_text card_back_text--tip">Every image can be rotated to reveal more information or extra bits that don't fit on the page itself.</p>
                   </div>
                 </template>
               </v-tooltip>
