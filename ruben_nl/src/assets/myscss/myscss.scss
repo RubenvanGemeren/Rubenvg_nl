@@ -124,6 +124,10 @@
     background-size: cover;
 }
 
+.container_3_box {
+    display: flex;
+}
+
 // images
 
 #full_body_img {
@@ -168,9 +172,13 @@
     transform: rotateY(180deg);
 }
 
+
 /* this style is applied when the card is clicked */
 .flipme {
   transform: rotateY(180deg);
+}
+
+.card_webdev {
 }
 
 
