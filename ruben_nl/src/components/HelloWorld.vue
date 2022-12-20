@@ -114,10 +114,27 @@
       class=""
       id="container_3"
       >
-      <h1 class="display">My experience</h1>
-
-      
-
+      <p id="intro_text" class="display">My Experience</p>
+      <div class="container_3_box">
+        <v-card
+          class="card_webdev"
+          color="#4d8b65"
+          elevation="20"
+        >
+          <v-card-title>
+            <h1>Web development</h1>
+          </v-card-title>
+          <v-card-subtitle>
+            <h3>It's not just this website.</h3>
+          </v-card-subtitle>
+          <v-card-text>
+            <p>Working with languages like <strong>PHP</strong> using <strong>Laravel</strong>, <strong>Javascript</strong> transformed with <strong>Typescript</strong> and modern frontend frameworks like <strong>Vue</strong> enchanched with <strong>Vuetify</strong>. Throughout the years I've worked on and developed both educational and professional level applications. Projects include <strong>CRM</strong>, <strong>ERP</strong> and <strong>Integration</strong> applications, as well as a <strong>restaurant system </strong> and <strong>web scraper</strong> used for national new sites.</p>
+          </v-card-text>
+          <v-card-actions>
+            <v-btn>Click me</v-btn>
+          </v-card-actions>
+        </v-card>
+      </div>
 
     </v-container>
     </v-main>
