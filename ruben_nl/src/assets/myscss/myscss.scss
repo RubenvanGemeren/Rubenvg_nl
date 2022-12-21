@@ -154,6 +154,20 @@
   position: relative;
 }
 
+.card_experience {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+// .card_experience__title {
+//     font-size: xx-large;
+//     white-space: normal;
+// }
+
+.v-card__title {
+    font-size: xx-large;
+}
+
 .card__face {
   position: absolute;
   width: inherit;
