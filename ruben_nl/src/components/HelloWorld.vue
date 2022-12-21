@@ -117,18 +117,75 @@
       <p id="intro_text" class="display">My Experience</p>
       <div class="container_3_box">
         <v-card
-          class="card_webdev"
-          color="#4d8b65"
+          class="card_experience card_webdev rounded-lg"
+          color="green"
+          elevation="20"
+        >
+          <v-card-title class="card_experience_title" >
+            Web development
+          </v-card-title>
+          <v-card-subtitle>
+            <p>Not just this website!</p>
+          </v-card-subtitle>
+          <v-card-text>
+            Working with languages like <strong>PHP</strong> using <strong>Laravel</strong>, <strong>Javascript</strong> transformed with <strong>Typescript</strong> and modern frontend frameworks like <strong>Vue</strong> enchanched with <strong>Vuetify</strong>. Throughout the years I've worked on and developed both educational and professional level applications. Projects include <strong>CRM</strong>, <strong>ERP</strong> and <strong>Integration</strong> applications, as well as a <strong>restaurant system </strong> and <strong>web scraper</strong> used for national new sites.
+          </v-card-text>
+          <v-card-actions>
+            <v-btn>Click me</v-btn>
+          </v-card-actions>
+
+        </v-card>
+        <v-card
+          class="card_experience card_ai rounded-lg"
+          color="blue"
           elevation="20"
         >
           <v-card-title>
-            <h1>Web development</h1>
+            Artificial intelligence
           </v-card-title>
           <v-card-subtitle>
-            <h3>It's not just this website.</h3>
+            Changing the world!
           </v-card-subtitle>
           <v-card-text>
-            <p>Working with languages like <strong>PHP</strong> using <strong>Laravel</strong>, <strong>Javascript</strong> transformed with <strong>Typescript</strong> and modern frontend frameworks like <strong>Vue</strong> enchanched with <strong>Vuetify</strong>. Throughout the years I've worked on and developed both educational and professional level applications. Projects include <strong>CRM</strong>, <strong>ERP</strong> and <strong>Integration</strong> applications, as well as a <strong>restaurant system </strong> and <strong>web scraper</strong> used for national new sites.</p>
+            A big part of my personal development during my education was learning about and working with <strong>artificial intelligence</strong> AKA AI. Besides spending more than half a year learning about what AI is and how it works I have also created both a <strong>machine learning</strong> and <strong>deep learing</strong> algorithm to get used to some of the most popular frameworks. <strong>Python</strong>, <strong>Tensorflow</strong>, <strong>Pandas</strong> and more.
+              
+          </v-card-text>
+          <v-card-actions>
+            <v-btn>Click me</v-btn>
+          </v-card-actions>
+        </v-card>
+
+        <v-card
+          class="card_experience card_general rounded-lg"
+          color="yellow"
+          elevation="20"
+        >
+          <v-card-title>
+            Programming
+          </v-card-title>
+          <v-card-subtitle>
+            Whatever you need boss!
+          </v-card-subtitle>
+          <v-card-text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </v-card-text>
+          <v-card-actions>
+            <v-btn>Click me</v-btn>
+          </v-card-actions>
+        </v-card>
+        <v-card
+          class="card_experience card_research rounded-lg"
+          color="purple"
+          elevation="20"
+        >
+          <v-card-title>
+            Reseach
+          </v-card-title>
+          <v-card-subtitle>
+          And development of course!
+          </v-card-subtitle>
+          <v-card-text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </v-card-text>
           <v-card-actions>
             <v-btn>Click me</v-btn>
