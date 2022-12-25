@@ -31,8 +31,7 @@
   
 // Text elements
 
-#name_text {
-    animation: fadeIn 8s;
+.name_text {
     background-image: linear-gradient(to right top, #d5c200, #cbc700, #c0cc00, #b4d000, #a7d500);
     background-clip: text;
     color: transparent;
@@ -41,15 +40,14 @@
     line-height: 0.8;
 }
 
-#name_text_small {
-    animation: fadeIn 8s;
+.name_text_small {
     background-image: linear-gradient(to right top, #d5c200, #cbc700, #c0cc00, #b4d000, #a7d500);
     background-clip: text;
     color: transparent;
     font-size: 80px;
 }
 
-#intro_text {
+.intro_text {
     font-size: 75px;
 }
 
@@ -106,7 +104,7 @@
     //background-size: cover;
 }
 
-#intro_container {
+.intro_container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -132,6 +130,8 @@
 
 .container_3_box {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 // images
@@ -145,6 +145,8 @@
 
 // Cards
 
+
+// Cards
 
 .scene {
   width: 20 * 16px;
@@ -193,12 +195,30 @@
 }
 
 
+
+// images 
+
+.experience_card_img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
 /* this style is applied when the card is clicked */
 .flipme {
   transform: rotateY(180deg);
 }
 
 .card_webdev {
+    min-width: fit-content;
+}
+
+.card_ai {
+    min-width: fit-content;
+}
+
+.card_general {
+    min-width: fit-content;
 }
 
 
