@@ -25,9 +25,12 @@
       <a href="https://www.linkedin.com/in/ruben-van-gemeren-1524a6151/?locale=en_US" target="_blank"><v-icon id="header_element" size="large" class="mx-4">mdi-linkedin</v-icon></a>
       <a href="https://steamcommunity.com/id/rubini9/" target="_blank"><v-icon id="header_element" size="large" class="mx-4">mdi-steam</v-icon></a>
       <v-btn
+            class="wobble-hor-bottom"
             rounded="lg"
             variant="tonal"
-        >
+            elevation="10"
+            color="success"
+      >
           Thank you
           <v-dialog
           v-model="dialog"
