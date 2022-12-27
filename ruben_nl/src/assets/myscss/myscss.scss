@@ -127,7 +127,8 @@
 }
 
 #container_3 {
-    max-width: 100%;
+    max-width: 75%;
+    height: 1000px;
     text-align: start;
     margin-block-end: 5%;
     color: white;
@@ -137,8 +138,29 @@
 
 .container_3_box {
     display: flex;
+    align-items: flex-start;
     justify-content:space-between;
     margin-inline: 3%;
+    margin-block: 3%;
+}
+
+// Replace with one class
+.webdev_card{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.ai_card{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.programming_card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 // images
