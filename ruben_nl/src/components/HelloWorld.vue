@@ -118,53 +118,134 @@
       >
       <p class="display intro_text">My Experience</p>
       <div class="container_3_box">
-        <v-card
-          class="card_webdev rounded-lg"
-          color="transparent"
-          flat
-        >
-        <div class="card_experience">
-              <img src="../assets/logos/bootstrap-5-1.svg" alt="" class="experience_card_img--webdev bootstrap">
-              <img src="../assets/logos/laravel-1.svg" alt="" class="experience_card_img--webdev laravel">
-              <img src="../assets/logos/logo-javascript.svg" alt="" class="experience_card_img--webdev javascript">
-              <h1 class="card_experience_title">Web development</h1>
-              <img src="../assets/logos/typescript.svg" alt="" class="experience_card_img--webdev typescript">
-              <img src="../assets/logos/vue-9.svg" alt="" class="experience_card_img--webdev vue">
-              <img src="../assets/logos/php-1.svg" alt="" class="experience_card_img--webdev php">
-        </div>
-        </v-card>
-        <v-card
-          class="card_ai rounded-lg"
-          color="transparent"
-          flat
-        >
-          <div class="card_experience">
-
-            <img src="../assets/logos/icons8-anaconda.svg" alt="" class="experience_card_img--ai anaconda">
-            <img src="../assets/logos/tensorflow-2.svg" alt="" class="experience_card_img--ai tensorflow">
-            <h1 class="card_experience_title">Artificial Intelligence</h1>
-            <img src="../assets/logos/Pandas_logo.svg.png" alt="" class="experience_card_img--ai--pandas pandas">
-            <img src="../assets/logos/python-5.svg" alt="" class="experience_card_img--ai python">
-
-          </div>
-        </v-card>
 
         <v-card
-          class="card_general rounded-lg"
-          color="transparent"
-          flat
+          class="webdev_card"
+          color="teal"
         >
-          <div class="card_experience">
+          
 
-                <img src="../assets/logos/c--4.svg" alt="" class="experience_card_img--prog csharp">
-                <img src="../assets/logos/android-logomark.svg" alt="" class="experience_card_img--prog android">
-                <img src="../assets/logos/github-icon-1.svg" alt="" class="experience_card_img--prog github">
-                <h1 class="card_experience_title">Programming</h1>
-                <img src="../assets/logos/devexpress.png" alt="" class="experience_card_img--prog--devexpress devexpress">
-                <img src="../assets/logos/icons8-virtual-reality-96.png" alt="" class="experience_card_img--prog vr">
-                <img src="../assets/logos/mysql-6.svg" alt="" class="experience_card_img--prog sql">
-          </div>
+          <v-card-title>
+            Web development
+          </v-card-title>
+
+          <v-card-subtitle>
+            More than just a website!
+          </v-card-subtitle>
+
+          <v-card-actions>
+            <v-btn
+              color="teal-darken-4"
+              variant="text"
+            >
+              Explore
+              <v-icon id="" size="small" class="ml-2">mdi-open-in-new</v-icon>
+            </v-btn>
+
+            <v-spacer></v-spacer>
+
+            <v-btn
+              :icon="show_webdev ? 'mdi-chevron-up' : 'mdi-chevron-down'"
+              @click="show_webdev = !show_webdev"
+            ></v-btn>
+          </v-card-actions>
+
+          <v-expand-transition>
+            <div v-show="show_webdev">
+              <v-divider></v-divider>
+
+              <v-card-text>
+                I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+              </v-card-text>
+            </div>
+          </v-expand-transition>
         </v-card>
+
+        <v-card
+          class="ai_card"
+          color="indigo"
+        >
+          
+
+          <v-card-title>
+            Artificial Intelligence
+          </v-card-title>
+
+          <v-card-subtitle>
+            Brains!
+          </v-card-subtitle>
+
+          <v-card-actions>
+            <v-btn
+              color="indigo-darken-4"
+              variant="text"
+            >
+              Explore
+              <v-icon id="" size="small" class="ml-2">mdi-open-in-new</v-icon>
+            </v-btn>
+
+            <v-spacer></v-spacer>
+
+            <v-btn
+              :icon="show_ai ? 'mdi-chevron-up' : 'mdi-chevron-down'"
+              @click="show_ai = !show_ai"
+            ></v-btn>
+          </v-card-actions>
+
+          <v-expand-transition>
+            <div v-show="show_ai">
+              <v-divider></v-divider>
+
+              <v-card-text>
+                I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+              </v-card-text>
+            </div>
+          </v-expand-transition>
+        </v-card>
+        
+        <v-card
+          class="programming_card"
+          color="orange"
+        >
+          
+
+          <v-card-title>
+            Allround Programming
+          </v-card-title>
+
+          <v-card-subtitle>
+            Whatever you need boss!
+          </v-card-subtitle>
+
+          <v-card-actions>
+            <v-btn
+              color="deep-orange-darken-4"
+              variant="text"
+            >
+              Explore
+              <v-icon id="" size="small" class="ml-2">mdi-open-in-new</v-icon>
+            </v-btn>
+
+            <v-spacer></v-spacer>
+
+            <v-btn
+              :icon="show_programming ? 'mdi-chevron-up' : 'mdi-chevron-down'"
+              @click="show_programming = !show_programming"
+            ></v-btn>
+          </v-card-actions>
+
+          <v-expand-transition>
+            <div v-show="show_programming">
+              <v-divider></v-divider>
+
+              <v-card-text>
+                I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+              </v-card-text>
+            </div>
+          </v-expand-transition>
+        </v-card>
+       
+
       </div>
     </v-container>
     </v-main>
@@ -180,7 +261,10 @@
       // The alert can be used for a later event.
       alert: true,
       dialog: false,
-      cardOne: "start"
+      cardOne: "start",
+      show_webdev: false,
+      show_ai: false,
+      show_programming: false,
     }),
     
   }
