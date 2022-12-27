@@ -24,13 +24,11 @@
 }
 
 // Buttons
-
 .wobble-hor-bottom:hover {
-	        animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both;
 }
   
 // Text elements
-
 .name_text {
     background-image: linear-gradient(to right top, #d5c200, #cbc700, #c0cc00, #b4d000, #a7d500);
     background-clip: text;
@@ -71,6 +69,15 @@
 .card_back_text--tip {
     align-self: flex-end;
     font-size: small;
+}
+
+
+// This does not work (for v-card-title), see github for issue
+.card_experience_title {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: xx-large;
+    
 }
 
 // Thank you
@@ -120,7 +127,7 @@
 }
 
 #container_3 {
-    max-width: 75%;
+    max-width: 100%;
     text-align: start;
     margin-block-end: 5%;
     color: white;
@@ -130,8 +137,8 @@
 
 .container_3_box {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content:space-between;
+    margin-inline: 3%;
 }
 
 // images
@@ -142,8 +149,6 @@
     border: #cbc700 solid 4px;
     border-radius: 20px;
 }
-
-// Cards
 
 
 // Cards
@@ -163,14 +168,14 @@
 }
 
 .card_experience {
-    margin-left: 1%;
-    margin-right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    margin: 1%;
+    width: 450px;
+    height: 500px;
 }
-
-// .card_experience__title {
-//     font-size: xx-large;
-//     white-space: normal;
-// }
 
 .v-card__title {
     font-size: xx-large;
@@ -198,10 +203,89 @@
 
 // images 
 
-.experience_card_img {
-    max-width: 300px;
-    max-height: 300px;
+.experience_card_img--webdev {
+    width: 70px;
+    height: 70px;
 }
+
+.experience_card_img--ai {
+    width: 100px;
+    height: 100px;
+}
+
+.experience_card_img--ai--pandas {
+    width: 150px;
+    height: 150px;
+    object-fit:contain
+}
+
+.experience_card_img--prog {
+    width: 70px;
+    height: 70px;
+}
+
+.experience_card_img--prog--devexpress {
+    width: 165px;
+    height: 70px;
+}
+
+
+.bootstrap {
+    margin-bottom: 15%;
+    align-self:flex-end;
+}
+
+.laravel {
+    margin: 5%;
+    align-self:flex-start;
+}
+
+.javascript {
+    align-self: flex-end;
+}
+
+.typescript {
+    align-self: flex-end;
+    margin-bottom: 2%;
+}
+
+.vue {
+    align-self: flex-start;
+}
+
+.php {
+    align-self: flex-end;
+    margin-bottom: 10%;
+}
+
+.anaconda {
+    align-self: baseline;
+    margin-top: 8%;
+    margin-right: 15%;
+}
+
+.python {
+}
+
+.pandas {
+    align-self: baseline;
+    margin-right: 5%;
+}
+
+.tensorflow {
+    align-self: flex-end;
+}
+
+.csharp {
+    align-self: flex-end;
+    margin-right: 30%;
+}
+
+.android {
+    align-self: baseline;
+    margin-right: 25%;
+}
+
 
 
 /* this style is applied when the card is clicked */
@@ -209,18 +293,16 @@
   transform: rotateY(180deg);
 }
 
-.card_webdev {
-    min-width: fit-content;
+.card_webdev:hover {
 }
 
 .card_ai {
-    min-width: fit-content;
+
 }
 
 .card_general {
-    min-width: fit-content;
-}
 
+}
 
 
 
@@ -267,4 +349,5 @@
               transform: translateX(-6 * 0.4px) rotate(-1.2 * 0.4deg);
     }
   }
+  
   

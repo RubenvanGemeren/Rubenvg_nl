@@ -119,64 +119,51 @@
       <p class="display intro_text">My Experience</p>
       <div class="container_3_box">
         <v-card
-          class="card_experience card_webdev rounded-lg"
-          color="green"
-          elevation="20"
+          class="card_webdev rounded-lg"
+          color="transparent"
+          flat
         >
-          <v-card-title class="card_experience_title" >
-            Web development
-          </v-card-title>
-          <v-card-subtitle>
-            <p>Not just this website!</p>
-          </v-card-subtitle>
-          <v-card-text>
-            <img src="../assets/logos/webdev_icons.png" alt="webdev icons" class="experience_card_img">
-            <!-- Working with languages like <strong>PHP</strong> using <strong>Laravel</strong>, <strong>Javascript</strong> transformed with <strong>Typescript</strong> and modern frontend frameworks like <strong>Vue</strong> enchanched with <strong>Vuetify</strong>. Throughout the years I've worked on and developed both educational and professional level applications. Projects include <strong>CRM</strong>, <strong>ERP</strong> and <strong>Integration</strong> applications, as well as a <strong>restaurant system </strong> and <strong>web scraper</strong> used for national new sites. -->
-          </v-card-text>
-          <v-card-actions>
-            <v-btn>Click me</v-btn>
-          </v-card-actions>
-
+        <div class="card_experience">
+              <img src="../assets/logos/bootstrap-5-1.svg" alt="" class="experience_card_img--webdev bootstrap">
+              <img src="../assets/logos/laravel-1.svg" alt="" class="experience_card_img--webdev laravel">
+              <img src="../assets/logos/logo-javascript.svg" alt="" class="experience_card_img--webdev javascript">
+              <h1 class="card_experience_title">Web development</h1>
+              <img src="../assets/logos/typescript.svg" alt="" class="experience_card_img--webdev typescript">
+              <img src="../assets/logos/vue-9.svg" alt="" class="experience_card_img--webdev vue">
+              <img src="../assets/logos/php-1.svg" alt="" class="experience_card_img--webdev php">
+        </div>
         </v-card>
         <v-card
-          class="card_experience card_ai rounded-lg"
-          color="blue"
-          elevation="20"
+          class="card_ai rounded-lg"
+          color="transparent"
+          flat
         >
-          <v-card-title>
-            Artificial intelligence
-          </v-card-title>
-          <v-card-subtitle>
-            Changing the world!
-          </v-card-subtitle>
-          <v-card-text>
-            <img src="../assets/logos/AI_icons.png" alt="AI icons" class="experience_card_img">
-            <!-- A big part of my personal development during my education was learning about and working with <strong>artificial intelligence</strong> AKA AI. Besides spending more than half a year learning about what AI is and how it works I have also created both a <strong>machine learning</strong> and <strong>deep learing</strong> algorithm to get used to some of the most popular frameworks. <strong>Python</strong>, <strong>Tensorflow</strong>, <strong>Pandas</strong> and more. -->
-              
-          </v-card-text>
-          <v-card-actions>
-            <v-btn>Click me</v-btn>
-          </v-card-actions>
+          <div class="card_experience">
+
+            <img src="../assets/logos/icons8-anaconda.svg" alt="" class="experience_card_img--ai anaconda">
+            <img src="../assets/logos/tensorflow-2.svg" alt="" class="experience_card_img--ai tensorflow">
+            <h1 class="card_experience_title">Artificial Intelligence</h1>
+            <img src="../assets/logos/Pandas_logo.svg.png" alt="" class="experience_card_img--ai--pandas pandas">
+            <img src="../assets/logos/python-5.svg" alt="" class="experience_card_img--ai python">
+
+          </div>
         </v-card>
 
         <v-card
-          class="card_experience card_general rounded-lg"
-          color="yellow"
-          elevation="20"
+          class="card_general rounded-lg"
+          color="transparent"
+          flat
         >
-          <v-card-title>
-            Programming
-          </v-card-title>
-          <v-card-subtitle>
-            Whatever you need boss!
-          </v-card-subtitle>
-          <v-card-text>
-            <img src="../assets/logos/programming_icons.png" alt="programming icons" class="experience_card_img">
-            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
-          </v-card-text>
-          <v-card-actions>
-            <v-btn>Click me</v-btn>
-          </v-card-actions>
+          <div class="card_experience">
+
+                <img src="../assets/logos/c--4.svg" alt="" class="experience_card_img--prog csharp">
+                <img src="../assets/logos/android-logomark.svg" alt="" class="experience_card_img--prog android">
+                <img src="../assets/logos/github-icon-1.svg" alt="" class="experience_card_img--prog github">
+                <h1 class="card_experience_title">Programming</h1>
+                <img src="../assets/logos/devexpress.png" alt="" class="experience_card_img--prog--devexpress devexpress">
+                <img src="../assets/logos/icons8-virtual-reality-96.png" alt="" class="experience_card_img--prog vr">
+                <img src="../assets/logos/mysql-6.svg" alt="" class="experience_card_img--prog sql">
+          </div>
         </v-card>
       </div>
     </v-container>
