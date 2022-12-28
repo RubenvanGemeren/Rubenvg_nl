@@ -116,7 +116,7 @@
       class=""
       id="container_3"
       >
-      <p class="display intro_text">My Experience</p>
+      
       <div class="container_3_box">
         
           <v-card
