@@ -132,9 +132,7 @@
               </v-card-title>
             </div>
 
-          <v-card-title>
-            Web development
-          </v-card-title>
+            <v-spacer></v-spacer>
 
             <div class="webdev_icons">
                   <img src="../assets/logos/php-1.svg" alt="" class="experience_card_img--webdev php">
