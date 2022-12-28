@@ -274,32 +274,32 @@
 }
 
 
-.bootstrap {
-    margin-bottom: 15%;
-    align-self:flex-end;
+.bootstrap:hover {
+    animation: shake-lr 0.67s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
-.laravel {
-    margin: 5%;
-    align-self:flex-start;
+.laravel:hover {
+    animation: shake-lr 0.73s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+
 }
 
-.javascript {
-    align-self: flex-end;
+.javascript:hover {
+    animation: shake-lr 0.64s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+
 }
 
-.typescript {
-    align-self: flex-end;
-    margin-bottom: 2%;
+.typescript:hover {
+    animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+
 }
 
-.vue {
-    align-self: flex-start;
+.vue:hover {
+    animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+
 }
 
-.php {
-    align-self: flex-end;
-    margin-bottom: 10%;
+.php:hover {
+    animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
 .anaconda {
