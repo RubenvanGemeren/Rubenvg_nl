@@ -118,48 +118,57 @@
       >
       <p class="display intro_text">My Experience</p>
       <div class="container_3_box">
-
-        <v-card
-          class="webdev_card"
+        
+          <v-card
+          class="webdev_card rounded-xl"
           color="teal"
-        >
-          
+          >
+
+          <div class="webdev_content">
+            <div class="webdev_info">
+              <v-card-title>
+                <h1 class="webdev_title">Web<br><br>development</h1> <br>
+                <h3 class="webdev_subtitle">More than just a website!</h3>
+              </v-card-title>
+            </div>
 
           <v-card-title>
             Web development
           </v-card-title>
 
-          <v-card-subtitle>
-            More than just a website!
-          </v-card-subtitle>
+            <div class="webdev_icons">
+                  <img src="../assets/logos/php-1.svg" alt="" class="experience_card_img--webdev php">
+                  <img src="../assets/logos/laravel-1.svg" alt="" class="experience_card_img--webdev laravel">
+                  <img src="../assets/logos/vue-9.svg" alt="" class="experience_card_img--webdev vue">
+                  <img src="../assets/logos/typescript.svg" alt="" class="experience_card_img--webdev typescript">
+                  <img src="../assets/logos/logo-javascript.svg" alt="" class="experience_card_img--webdev javascript">
+                  <img src="../assets/logos/bootstrap-5-1.svg" alt="" class="experience_card_img--webdev bootstrap">
+          </div>
 
-          <v-card-actions>
-            <v-btn
-              color="teal-darken-4"
-              variant="text"
-            >
-              Explore
-              <v-icon id="" size="small" class="ml-2">mdi-open-in-new</v-icon>
-            </v-btn>
+        </div>
 
-            <v-spacer></v-spacer>
 
             <v-btn
-              :icon="show_webdev ? 'mdi-chevron-up' : 'mdi-chevron-down'"
+              class="webdev_show_more_button"
               @click="show_webdev = !show_webdev"
-            ></v-btn>
-          </v-card-actions>
+              variant="clear"
+              block
+            >{{ show_webdev ? 'Show less' : 'Show more' }}</v-btn>
 
-          <v-expand-transition>
-            <div v-show="show_webdev">
-              <v-divider></v-divider>
 
-              <v-card-text>
-                I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-              </v-card-text>
-            </div>
-          </v-expand-transition>
-        </v-card>
+              <v-expand-transition>
+                <div v-show="show_webdev">
+                  <v-divider></v-divider>
+
+
+                  <v-card-text>
+                    I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+                  </v-card-text>
+
+                </div>
+              </v-expand-transition>
+            
+          </v-card>
 
         <v-card
           class="ai_card"
