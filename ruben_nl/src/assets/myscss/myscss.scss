@@ -162,10 +162,9 @@
 
 .container_3_box {
     display: flex;
-    align-items: flex-start;
-    justify-content:space-between;
-    margin-inline: 3%;
-    margin-block: 3%;
+    flex-direction: column;
+    row-gap: 15vh;
+    margin-block: 5%;
 }
 
 // Replace with one class
