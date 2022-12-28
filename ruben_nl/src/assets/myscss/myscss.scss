@@ -27,6 +27,20 @@
 .wobble-hor-bottom:hover {
     animation: wobble-hor-bottom 0.8s both;
 }
+
+.webdev_show_more_button {
+    margin-top: 5vh;
+}
+
+.webdev_content{
+    display: flex;
+    flex-direction: row;
+    margin: 5vh;
+}
+
+.webdev_icons {
+    align-items: center;
+}
   
 // Text elements
 .name_text {
@@ -78,6 +92,16 @@
     text-align: center;
     font-size: xx-large;
     
+}
+
+.webdev_title {
+    font-size: 7vh;
+
+}
+
+.webdev_subtitle {
+    font-size: 4vh;
+    color: darkgray;
 }
 
 // Thank you
