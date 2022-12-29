@@ -158,10 +158,48 @@
                 <div v-show="show_webdev">
                   <v-divider></v-divider>
 
+                  <v-carousel
+                    hide-delimiters
+                    progress="teal"
+                  >
+                    <template v-slot:prev="{ props }">
+                      <v-btn
+                        class="rounded-round"
+                        icon
+                        show-arrows="hover"
+                        variant="outlined"
+                        color="teal"
+                        @click="props.onClick"
+                      ><v-icon id="header_element" size="small" class="mx-4">mdi-arrow-left</v-icon></v-btn>
+                    </template>
+                    <template v-slot:next="{ props }">
+                      <v-btn
+                        class="rounded-round"
+                        variant="outlined"
+                        color="info"
+                        icon
+                        @click="props.onClick"
+                      ><v-icon id="header_element" size="small" class="mx-4">mdi-arrow-right</v-icon></v-btn>
+                    </template>
+                    <v-carousel-item
+                      v-for="(slide, i) in slides"
+                      :key="i"
+                    >
+                      <v-sheet
+                        :color="colors[i]"
+                        height="100%"
+                      >
+                        <div class="d-flex fill-height justify-center align-center">
+                          <div class="text-h2">
 
-                  <v-card-text>
-                    I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                  </v-card-text>
+                            {{ slide }} Project
+
+
+                          </div>
+                        </div>
+                      </v-sheet>
+                    </v-carousel-item>
+                  </v-carousel>
 
                 </div>
               </v-expand-transition>
