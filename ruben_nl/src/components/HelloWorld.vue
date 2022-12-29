@@ -296,48 +296,93 @@
             
           </v-card>
         
-        <v-card
-          class="programming_card"
+          <v-card
+          class="programming_card rounded-xl"
           color="orange"
-        >
-          
+          >
 
-          <v-card-title>
-            Allround Programming
-          </v-card-title>
+          <div class="programming_content">
+            <div class="programming_info">
+              <v-card-title>
+                <h1 class="programming_title">General<br><br>programming</h1> <br>
+                <h3 class="programming_subtitle">Jack of all traits :)</h3>
+              </v-card-title>
+            </div>
 
-          <v-card-subtitle>
-            Whatever you need boss!
-          </v-card-subtitle>
+            <v-spacer></v-spacer>
 
-          <v-card-actions>
-            <v-btn
-              color="deep-orange-darken-4"
-              variant="text"
-            >
-              Explore
-              <v-icon id="" size="small" class="ml-2">mdi-open-in-new</v-icon>
-            </v-btn>
+            <div class="programming_icons">
+                  <img src="../assets/logos/c--4.svg" alt="" class="experience_card_img--programming csharp">
+                  <img src="../assets/logos/devexpress.png" alt="" class="experience_card_img--programming devexpress">
+                  <img src="../assets/logos/android-logomark.svg" alt="" class="experience_card_img--programming android">
+                  <img src="../assets/logos/icons8-virtual-reality-96.png" alt="" class="experience_card_img--programming vr">
+                  <img src="../assets/logos/python-5.svg" alt="" class="experience_card_img--programming python">
+                  <img src="../assets/logos/mysql-6.svg" alt="" class="experience_card_img--programming mysql">
+            </div>
+
+        </div>
 
             <v-spacer></v-spacer>
 
             <v-btn
-              :icon="show_programming ? 'mdi-chevron-up' : 'mdi-chevron-down'"
+              class="programming_show_more_button"
               @click="show_programming = !show_programming"
-            ></v-btn>
-          </v-card-actions>
+              variant="clear"
+              block
+            >{{ show_programming ? 'Show less' : 'Show more' }}</v-btn>
 
-          <v-expand-transition>
-            <div v-show="show_programming">
-              <v-divider></v-divider>
 
-              <v-card-text>
-                I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-              </v-card-text>
-            </div>
-          </v-expand-transition>
-        </v-card>
-       
+              <v-expand-transition>
+                <div v-show="show_programming">
+                  <v-divider></v-divider>
+
+                  <v-carousel
+                    hide-delimiters
+                    progress="teal"
+                  >
+                    <template v-slot:prev="{ props }">
+                      <v-btn
+                        class="rounded-round"
+                        icon
+                        show-arrows="hover"
+                        variant="outlined"
+                        color="teal"
+                        @click="props.onClick"
+                      ><v-icon id="header_element" size="small" class="mx-4">mdi-arrow-left</v-icon></v-btn>
+                    </template>
+                    <template v-slot:next="{ props }">
+                      <v-btn
+                        class="rounded-round"
+                        variant="outlined"
+                        color="info"
+                        icon
+                        @click="props.onClick"
+                      ><v-icon id="header_element" size="small" class="mx-4">mdi-arrow-right</v-icon></v-btn>
+                    </template>
+                    <v-carousel-item
+                      v-for="(programming_slide, i) in programming_slides"
+                      :key="i"
+                    >
+                      <v-sheet
+                        :color="colors[i]"
+                        height="100%"
+                      >
+                        <div class="d-flex fill-height justify-center align-center">
+                          <div class="text-h2">
+
+                            {{ programming_slide }} Project
+
+
+                          </div>
+                        </div>
+                      </v-sheet>
+                    </v-carousel-item>
+                  </v-carousel>
+
+                </div>
+              </v-expand-transition>
+            
+          </v-card>
 
       </div>
     </v-container>
