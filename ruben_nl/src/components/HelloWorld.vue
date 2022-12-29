@@ -182,7 +182,7 @@
                       ><v-icon id="header_element" size="small" class="mx-4">mdi-arrow-right</v-icon></v-btn>
                     </template>
                     <v-carousel-item
-                      v-for="(slide, i) in slides"
+                      v-for="(webdev_slide, i) in webdev_slides"
                       :key="i"
                     >
                       <v-sheet
@@ -192,7 +192,7 @@
                         <div class="d-flex fill-height justify-center align-center">
                           <div class="text-h2">
 
-                            {{ slide }} Project
+                            {{ webdev_slide }} Project
 
 
                           </div>
