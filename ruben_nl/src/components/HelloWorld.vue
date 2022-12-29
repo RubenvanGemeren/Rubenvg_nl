@@ -404,9 +404,18 @@
       show_ai: false,
       show_programming: false,
       colors: [
-          'red lighten-1',
-          'indigo',
+          'primary',
+          'error',
           'warning',
+          'succes',
+          'info',
+          'info',
+        ],
+      webdev_slides: [
+          'Helmink - Integration platform',
+          'Helmink - CRM / ERP system',
+          'TNO - Web Scraper',
+          '@Mama\'s - Restaurant ordering system',
         ],
       ai_slides: [
           'Hogeschool Rotterdam - Vehicle routing problem',
