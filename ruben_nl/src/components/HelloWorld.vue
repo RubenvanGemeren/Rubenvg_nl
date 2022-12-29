@@ -231,7 +231,6 @@
 
         </div>
 
-            <v-spacer></v-spacer>
 
             <v-btn
               class="ai_show_more_button"
@@ -240,9 +239,6 @@
               block
             >{{ show_ai ? 'Show less' : 'Show more' }}</v-btn>
 
-          <v-expand-transition>
-            <div v-show="show_ai">
-              <v-divider></v-divider>
 
               <v-expand-transition>
                 <div v-show="show_ai">
@@ -322,7 +318,6 @@
 
         </div>
 
-            <v-spacer></v-spacer>
 
             <v-btn
               class="programming_show_more_button"
