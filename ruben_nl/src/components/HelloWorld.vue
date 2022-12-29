@@ -408,10 +408,18 @@
           'indigo',
           'warning',
         ],
-      slides: [
-          'Helmink',
-          'TNO',
-          '@Mama\'s',
+      ai_slides: [
+          'Hogeschool Rotterdam - Vehicle routing problem',
+          'Hogeschool Rotterdam - Route prediction',
+        ],
+
+      programming_slides: [
+          'Sultan CRM - Blazor web app',
+          'Sultan CRM - CRM development',
+          'Hogeschool Rotterdam - VR App',
+          'Hogeschool Rotterdam - Open days app',
+          'Hogeschool Rotterdam - Tick Tack Toe',
+          'Dalton Lyceum Barendrecht - HTML Website',
         ],
     }),
     
