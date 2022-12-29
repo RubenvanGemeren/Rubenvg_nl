@@ -310,6 +310,16 @@
       show_webdev: false,
       show_ai: false,
       show_programming: false,
+      colors: [
+          'red lighten-1',
+          'indigo',
+          'warning',
+        ],
+      slides: [
+          'Helmink',
+          'TNO',
+          '@Mama\'s',
+        ],
     }),
     
   }
