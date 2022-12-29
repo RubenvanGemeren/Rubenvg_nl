@@ -38,7 +38,27 @@
     margin: 5vh;
 }
 
+.ai_content{
+    display: flex;
+    flex-direction: row;
+    margin: 5vh;
+}
+
+.programming_content{
+    display: flex;
+    flex-direction: row;
+    margin: 5vh;
+}
+
 .webdev_icons {
+    align-items: center;
+}
+
+.ai_icons {
+    align-items: center;
+}
+
+.programming_icons {
     align-items: center;
 }
   
@@ -85,7 +105,6 @@
     font-size: small;
 }
 
-
 // This does not work (for v-card-title), see github for issue
 .card_experience_title {
     flex-basis: 100%;
@@ -96,10 +115,27 @@
 
 .webdev_title {
     font-size: 7vh;
-
 }
 
 .webdev_subtitle {
+    font-size: 4vh;
+    color: darkgray;
+}
+
+.ai_title {
+    font-size: 7vh;
+}
+
+.ai_subtitle {
+    font-size: 4vh;
+    color: darkgray;
+}
+
+.programming_title {
+    font-size: 7vh;
+}
+
+.programming_subtitle {
     font-size: 4vh;
     color: darkgray;
 }
@@ -152,7 +188,7 @@
 
 #container_3 {
     max-width: 75%;
-    height: 1000px;
+    height: 300vh;
     text-align: start;
     margin-block-end: 5%;
     color: white;
@@ -175,14 +211,12 @@
 
 .ai_card{
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    height: 100%;
 }
 
 .programming_card {
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    height: 100%;
 }
 
 // images
@@ -253,8 +287,13 @@
 }
 
 .experience_card_img--ai {
-    width: 100px;
-    height: 100px;
+    height: 9vh;
+    margin-inline: 2vh;
+}
+
+.experience_card_img--programming {
+    height: 7vh;
+    margin-inline: 2vh;
 }
 
 .experience_card_img--ai--pandas {
@@ -302,33 +341,43 @@
     animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
-.anaconda {
-    align-self: baseline;
-    margin-top: 8%;
-    margin-right: 15%;
+.anaconda:hover {
+    animation: shake-lr 0.67s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
-.python {
+.python:hover {
+    animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
-.pandas {
-    align-self: baseline;
-    margin-right: 5%;
+.pandas:hover {
+    animation: shake-lr 0.66s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
-.tensorflow {
-    align-self: flex-end;
+.tensorflow:hover {
+    animation: shake-lr 0.74s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
-.csharp {
-    align-self: flex-end;
-    margin-right: 30%;
+.csharp:hover {
+    animation: shake-lr 0.74s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
-.android {
-    align-self: baseline;
-    margin-right: 25%;
+.android:hover {
+    animation: shake-lr 0.74s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
+
+.devexpress:hover {
+    animation: shake-lr 0.74s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.vr:hover {
+    animation: shake-lr 0.74s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.mysql:hover {
+    animation: shake-lr 0.74s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+
 
 
 
