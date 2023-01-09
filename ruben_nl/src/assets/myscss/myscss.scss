@@ -203,6 +203,11 @@
     margin-block: 5%;
 }
 
+.project_box {
+    display: flex;
+    flex-direction: column;
+}
+
 // Replace with one class
 .webdev_card{
     width: 100%;

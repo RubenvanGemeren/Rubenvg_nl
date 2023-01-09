@@ -145,7 +145,6 @@
 
         </div>
 
-
             <v-btn
               class="webdev_show_more_button"
               @click="show_webdev = !show_webdev"
@@ -190,10 +189,16 @@
                         height="100%"
                       >
                         <div class="d-flex fill-height justify-center align-center">
-                          <div class="text-h2">
+                          <div class="project_box">
+
+                            <v-btn
+                            variant="text"
+                            block
+                            href="./projects/HelminkIntegrationPlatform.vue">
+                              <h3>explore <v-icon>mdi-open-in-new</v-icon></h3>
+                            </v-btn>
 
                             {{ webdev_slide }} Project
-
 
                           </div>
                         </div>
@@ -276,7 +281,7 @@
                         height="100%"
                       >
                         <div class="d-flex fill-height justify-center align-center">
-                          <div class="text-h2">
+                          <div class="project_box">
 
                             {{ ai_slide }} Project
 
@@ -363,7 +368,7 @@
                         height="100%"
                       >
                         <div class="d-flex fill-height justify-center align-center">
-                          <div class="text-h2">
+                          <div class="project_box">
 
                             {{ programming_slide }} Project
 
